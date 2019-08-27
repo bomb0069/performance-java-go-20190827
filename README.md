@@ -29,3 +29,12 @@ using query to get data from table customer
 stop MySQL's docker container
 
 >docker container stop sck-database
+
+## API Testing
+
+using newman to run api testing
+
+### RUN API Testing on Development Environment
+
+run api testing with newman in development environment
+>newman run tests/api/get_customers.json -e tests/api/environment/development.json

@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "e62a9f4e-d7b6-4cd4-b90c-a36d0d182380",
+		"name": "sck-motor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get customers at 103 should be name Atelier graphique",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "c7caff91-6315-4eea-9b85-99141cf94554",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Your test name\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.customerName).to.eql(\"Atelier graphique\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{URL}}/api/v1/customers/103",
+					"host": [
+						"{{URL}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"103"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
