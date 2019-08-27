@@ -2,6 +2,18 @@
 
 this project creating to proved that golang is faster than java
 
+## Unit Test
+
+### Run Unit Test on local machine
+
+>mvn test
+
+## Start Application Server
+
+### Run spring-boot to start server
+
+>mvn spring-boot:run
+
 ## Using SCK-MOTOR Database
 
 ### Start SCK-MOTOR Database
