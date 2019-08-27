@@ -24,8 +24,8 @@ public class ControllerTest {
     public void get_customers_with_103_should_be_Atelier_graphique () throws Exception {
         this.mvc.perform(get("/api/v1/customers/103"))
                 .andExpect(status().isOk())
-                .andExpect(jsonPath("id").exists())
-                .andExpect(jsonPath("id").value(103))
+                .andExpect(jsonPath("customerNumber").exists())
+                .andExpect(jsonPath("customerNumber").value(103))
                 .andExpect(jsonPath("customerName").exists())
                 .andExpect(jsonPath("customerName").value("Atelier graphique"));
     }
