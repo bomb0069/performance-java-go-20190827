@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Controller {
+public class CustomerController {
 
     @GetMapping(path = "/api/v1/customers/{id}")
     public CustomerResponse get(@PathVariable int id) {

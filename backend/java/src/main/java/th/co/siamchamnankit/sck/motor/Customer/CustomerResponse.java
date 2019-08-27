@@ -4,6 +4,10 @@ public class CustomerResponse {
     private int customerNumber;
     private String customerName;
 
+    public CustomerResponse() {
+        super();
+    }
+
     public CustomerResponse(int customerNumber, String customerName) {
         this.customerNumber = customerNumber;
         this.customerName = customerName;
