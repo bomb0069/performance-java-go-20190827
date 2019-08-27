@@ -34,7 +34,15 @@ stop MySQL's docker container
 
 using newman to run api testing
 
-### RUN API Testing on Development Environment
+### Run API Testing on Development Environment
 
 run api testing with newman in development environment
 >newman run tests/api/get_customers.json -e tests/api/environment/development.json
+
+## Performance Test
+
+### Run Performance test with jmeter
+
+run performance test for get customer with random id
+
+>jmeter -n -t tests/performance/get_customer.jmx -l tests/performance/get_customer_result.jtl
